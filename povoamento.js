@@ -318,7 +318,13 @@ db.aulas.insertMany([
     horario_fim: "16:30",
     qtd_alunos: "5",
     preco: "50",
-    //COLOCAR ALUNOS OU NÃO?
+    alunos: [
+        db.alunos.findOne({nome: "thais"})._id,
+        db.alunos.findOne({nome: "giovana"})._id,
+        db.alunos.findOne({nome: "nathalia"})._id,
+        db.alunos.findOne({nome: "debora"})._id,
+        db.alunos.findOne({nome: "gustavo"})._id
+    ]
 },
 
 {
