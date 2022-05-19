@@ -1,5 +1,3 @@
-use db;
-
 db.dropDatabase();
 
 //criando coleção de alunos
