@@ -154,12 +154,10 @@ db.aulas.aggregate([
  ]);
 
  //SAVE: salvando um novo cliente
- db.clientes.save( {
+db.clientes.save({
     nome: "pablo",
     cpf: "333000000-33",
     data_nascimento: "13/02/1989",
     email: "pablo@cin.ufpe.br",
     senha_id: "0021"
- })
-
- 
+ });
